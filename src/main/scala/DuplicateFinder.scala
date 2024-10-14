@@ -21,7 +21,14 @@ case class DuplicateFinder() {
       }
     }
 
-  private def findDuplicates(list: List[(String, String)]) =
-    list.filter(x => list.count(_._2 == x._2)== 2)
+  private def findDuplicates(list: List[(String, String)]) = {
+    //list.filter(x => list.count(_._2 == x._2)== 2)
+//    val firstMatch = list.find(x => list.count(_._2 == x._2) == 2).get
+//    val secondMatch = list.find(x => x._2 == firstMatch._2 && firstMatch._1 != x._1).get
+//    (firstMatch, secondMatch)
+
+    list.groupBy(x => x._2).filter(x=>x._2.size == 2).head._2
+
+  }
 
 }

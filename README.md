@@ -11,9 +11,29 @@ Good luck!
 ## Solutions
 ### Attempt 1
 Duration: ~17 seconds
+5 seconds is the parsing the csv file into a list...
 
 Import csv file as text. 
 Turn into List
-Filter list, so it only has items that share client Ids
+Filter list -> check every item to see if it shares a duplicate client id
 
 
+### Attempt 2
+Duration: ~ 10 seconds
+5 seconds is the parsing the csv file into a list...
+
+Import csv file as text
+Turn into List
+Find first -> check every item to see if it shares a duplicate client id
+
+Need to ditch the double list operation
+
+### Attempt 3
+Duration: ~ 5 seconds
+5 seconds is the parsing the csv file into a list?
+
+Import csv file as text
+Turn into List
+Group items by ClientId, find one with count of 2.
+
+Can we speed up the parsing?

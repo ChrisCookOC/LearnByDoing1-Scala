@@ -1,4 +1,3 @@
-import java.time.{Instant, LocalDate, LocalDateTime}
 
 object App {
 
@@ -13,7 +12,7 @@ object App {
 
     val timeElapsed = (endTime - startTime) / 1000000000
 
-    println(s"Elapsed time is ${timeElapsed} seconds")
+    println(s"Elapsed time is $timeElapsed seconds")
 
   }
 }
