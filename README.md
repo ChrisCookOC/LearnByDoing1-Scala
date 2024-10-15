@@ -8,6 +8,15 @@ Your solution should focus on efficiency.
 
 Good luck!
 
+# Running
+Use hyperfine
+
+Added sbt-assembly
+
+then sbt assembly creates a jar
+
+> hyperfine "java -jar target/scala-2.13/Learn\ By\ Doing\ Number\ 1-assembly-0.1.0-SNAPSHOT.jar"
+
 ## Solutions
 ### Attempt 1
 Duration: ~17 seconds
