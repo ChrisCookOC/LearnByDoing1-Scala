@@ -1,16 +1,22 @@
 import scala.io.Source
 
-case class DuplicateFinder() {
+object DuplicateFinder {
 
-  def run(): (String, String) = {
+  def main(args: Array[String]): Unit = {
+    val answer = run()
 
-    val startTime = System.nanoTime()
+    println(s"Answer is ${answer._1} & ${answer._2}")
+
+  }
+    def run(): (String, String) = {
+
+   // val startTime = System.nanoTime()
     val list = csvToList()
-    val endTime = System.nanoTime()
+   // val endTime = System.nanoTime()
 
-    val timeElapsed = (endTime - startTime) / 1000000000
+    //val timeElapsed = (endTime - startTime) / 1000000000
 
-    println(s"List time is $timeElapsed seconds")
+    //println(s"List time is $timeElapsed seconds")
 
 
     val answer = findDuplicates(list)

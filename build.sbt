@@ -5,5 +5,6 @@ ThisBuild / scalaVersion := "2.13.15"
 lazy val root = (project in file("."))
   .settings(
     name := "Learn By Doing Number 1",
-    libraryDependencies ++= Seq("org.scalatest" %% "scalatest" % "3.2.19")
+    libraryDependencies ++= Seq("org.scalatest" %% "scalatest" % "3.2.19"),
+    assembly / mainClass :=Some("DuplicateFinder")
   )

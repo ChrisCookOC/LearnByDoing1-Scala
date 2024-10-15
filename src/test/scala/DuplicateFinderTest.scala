@@ -9,7 +9,7 @@ class DuplicateFinderTest extends AnyFreeSpec {
 
       "find duplicates" in {
 
-        DuplicateFinder().run() mustBe ("213vsfd", "abc")
+        DuplicateFinder.run() mustBe ("213vsfd", "abc")
 
 
       }
