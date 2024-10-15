@@ -37,3 +37,10 @@ Turn into List
 Group items by ClientId, find one with count of 2.
 
 Can we speed up the parsing?
+
+### Attempt 4
+Duration: ~300ms
+
+Import csv file, immediately turn into list of arrays
+Group items by ClientId, find one with count of 2.
+

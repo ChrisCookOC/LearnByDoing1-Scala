@@ -10,9 +10,9 @@ object App {
 
     val endTime = System.nanoTime()
 
-    val timeElapsed = (endTime - startTime) / 1000000000
+    val timeElapsed = (endTime - startTime) / 1000000
 
-    println(s"Elapsed time is $timeElapsed seconds")
+    println(s"Elapsed time is $timeElapsed milliseconds")
 
   }
 }
